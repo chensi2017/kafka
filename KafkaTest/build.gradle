@@ -1,0 +1,13 @@
+
+apply plugin: 'java-library'
+
+repositories {
+    maven { url 'http://124.207.207.21:62125/repository/maven-central/' }
+	maven { url 'http://124.207.207.21:62125/repository/maven-snapshots/' }
+	mavenCentral()
+}
+
+dependencies {
+    compile('org.apache.kafka:kafka_2.10:0.10.0.0')
+}
+
